@@ -10,6 +10,11 @@ export const SearchGameContainer = styled.div`
   justify-content: center;
   margin-top: 20px;
   list-style-type: none;
+
 `
+export const List = styled.ul`
+  list-style-type: none;
+`
+
 ;
 

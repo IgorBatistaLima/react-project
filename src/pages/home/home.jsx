@@ -1,16 +1,17 @@
-import { SearchGameContainer } from "./style";
+// import { SearchGameContainer } from "./style";
 import SearchGame from "../../components/search-game/search-game";
+import { List } from "./style";
+
 
 export default function Home() {
   return (
-    <div>
-      <h1>Game Search</h1>
+    <div className = "nav-bar">
       <nav>
-        <ul>
+        <List>
           <li>
             <SearchGame />
           </li>
-        </ul>
+        </List>
       </nav>
     </div>
   );
