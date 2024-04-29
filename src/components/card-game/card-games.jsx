@@ -16,7 +16,7 @@ const GameCard = ({ game }) => {
           <br></br>
           Preço de Venda: {game.salePrice}
           <br></br>
-          Economia: {game.savings}
+          Economia: {`${(game.savings).toFixed(0)}%`}
         </CardText>
       </CardBody>
       <CardButton>Comprar</CardButton>
