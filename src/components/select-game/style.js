@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Select = styled.select`
+export const Selectbar = styled.select`
   padding: 10px;
   border-radius: 5px;
   border: 1px solid #333;
@@ -15,5 +15,4 @@ export const Select = styled.select`
   margin-left : 10px;
   margin-right : 10px;
   padding-left : 10px;
-`;
-
+`;  

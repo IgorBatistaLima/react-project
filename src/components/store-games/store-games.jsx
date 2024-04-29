@@ -1,26 +1,7 @@
-import { useState, useEffect } from 'react';
-import { Select } from './style';
+import StoreGamesSelect from "../../services/Store-api/store.jsx";
 
-export default function StoreGamesSelect() {
-  const [stores, setStores] = useState([]);
-
-  useEffect(() => {
-    fetch('https://www.cheapshark.com/api/1.0/stores')
-      .then(response => response.json())
-      .then(data => {
-        console.log(data);
-        setStores(data);
-      });
-  }, []);
-
+export default function StoreGames() {
   return (
-    <Select>
-      <option value="">All Stores</option>
-      {stores.map(store => (
-        <option key={store.storeID} value={store.storeID}>
-          {store.storeName}
-        </option>
-      ))}
-    </Select>
+    <StoreGamesSelect />
   );
 }
